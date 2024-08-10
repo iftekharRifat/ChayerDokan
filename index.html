@@ -10,17 +10,24 @@
         
     </style>
 </head>
-<body>
+<body> 
     <header>
         <div class="navbar">
-        <img src="logo.png" alt="logo" class="logo">
+        <img src="logo.png" alt="logo" class="logo" onclick="show()">
+       
         <nav>
-<ul>
-    <li><a href="#main-info">Home</a></li>
-    <li><a href="#product">Product</a></li>
-    <li><a href="#about-us">About Us</a></li>
-    <li><a href="#contact">Contact</a></li>
+            <img src="menu.png" id="menu" class="menu-img" alt="ghf">
+            <img src="menu-on.png" class="menu-img-on" alt="">
+<div id="nav-menu">
+    <ul>
+   <img src="close.png" id="close" alt="">
+    <li><a href="#main-info">হোম
+    </a></li>
+    <li><a href="#product">পণ্য</a></li>
+    <li><a href="#about-us">আমাদের সম্পর্কে</a></li>
+    <li><a href="#contact">যোগাযোগ</a></li>
 </ul>
+</div>
         </nav>
     </div>
     <div id="main-info">
@@ -32,7 +39,7 @@
              সময় কফি খাওয়া ব্যক্তিদের কিছুটা সমস্যা দেখা
               দেয়।</p>
             
-             <a class="more" href="">আরও দেখুন...</a>
+             <a class="more" id="more" href="#">আরও দেখুন...</a>
             
     </div>
     
@@ -125,11 +132,11 @@
 </div>
 <!-- Ends -->
 <div id="info">
-   
+    <img id="info-img" src="tea.jpg" alt="">
     <p id="info-line">চায়ের মধ্যে কায়ফেইন রয়েছে, যা স্নায়ুবিক কাজকর্মকে সচল রাখে
          এবং মস্তিষ্কে আরাম প্রদান করে।
          যে কারণে চাপের মধ্যে চায়ে চুমুক দিলে আরাম পাওয়া যায়</p>
-         <img id="info-img" src="tea.jpg" alt="">
+         <img id="info-img-small"  src="tea.jpg" alt="">
         </div>
 <!-- About Us -->
         <div id="about-us">
@@ -156,6 +163,12 @@
             </div>
             <p>কোন প্রশ্ন বা তথ্যের জন্য দ্বিধা করবেন না, আমরা সাহায্য করার জন্য প্রস্তুত!</p>
         </div>
+        <div id="popup" style="display: none;">
+            <h1 id="popup-h1">
+                দুঃখিত!!!</h1>
+            <p class="popup-p">এই পৃষ্ঠাটি বিকাশের অধীনে রয়েছে। </p><p class="popup-p"> পরে আবার চেষ্টা করুন </p>
+        <button id="button">Close</button>
+        </div>
 </body>
 <script>
     let nodelist =
@@ -164,15 +177,33 @@
     order.forEach(element => {
   element.addEventListener("click", run);
 });
+document.getElementById("more").addEventListener("click", run);
     function run(){
-        var txt;
-  if (confirm("Are Sure to Order")) {
-    alert("Order Complete")
-  } else {
-    alert("Order is Canceled")
-  }
+        const popup = document.getElementById("popup")
+        popup.style.display = "block"
+  
        
     }
+    document.getElementById("menu").addEventListener("click", image);
+    document.getElementById("close").addEventListener("click", imageOff);
+    function image(){
+    const image = document.getElementById("menu");
+    image.src = "menu-on.png"
+    const menu = document.getElementById("nav-menu");
+    menu.style.left = "250px"
+   }
+   function imageOff(){
+    const image = document.getElementById("menu");
+    image.src = "menu.png"
+    const menu = document.getElementById("nav-menu");
+    menu.style.left = "450px"
+   }
+
+   document.getElementById("button").addEventListener("click", close);
+   function close(){
+    const popup = document.getElementById("popup")
+        popup.style.display = "none"
+   }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
 </html>
