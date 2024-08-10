@@ -1,68 +1,185 @@
-body{
-    overflow-x: hidden;
-    width: 395px;
+/* Nav Start */
+nav ul li{
+    display: block;
 }
-header{
-    width: 200%;
+.navbar{
+    display: inline-flex;
 }
+nav ul li a{
+    text-decoration: none;
+    transition: 1s;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.menu-img{
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    left: 380px;
+    transition: 0.5s;
+}
+.menu-img-on{
+    display: none;
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    left: 380px;
+    transition: 0.5s;
+}
+.menu-img:hover .menu-img-on{
+    display: block;
+}
+#nav-menu{
+    position: absolute;
+    left: 450px;  
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-top: 0px;
+    height: 100%;
+    width: 250px;
+    transition: 1.5s;
+    -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transition: 2s;
+}
+nav ul li{
+    padding-bottom:25px;
+}
+nav ul{
+    position: relative;
+    left: 10px;
+}
+nav ul #close{
+    display: block;
+    width: 35px;
+    position: relative;
+    right: 50px;
+    transition: 1.5s;
+
+}
+.logo{
+    position: relative;
+    top: 00px;
+    left: 20px;
+}
+
+/* NAV ENDS */
 #main-info{
     margin-left: 2rem;
 }
 .main-slogan{
     width: 60%;
-    margin-left: 0;
-
-}
-.short-details{
-    width: 60%;
-    
 }
 .main-part{
     font-size: 40px;
+
 }
-hr{
-    width: 195%;
+.highlight{
+    font-size: 40px;
 }
-#title{
-    position: relative;
-    left: 235px;
-    font-size: 45px;
-    padding: 20px;
+
+.short-details{
+    font-size: 12px;
+    width: 80%;
 }
 #product{
-    grid-template-columns: auto auto;
-    margin: 0 5%
+    grid-template-columns: 200px 200px;
+    margin: 0 5%;
 }
+
 .box{
-    width: 350px;
-    margin: 10px;
+    width: 100px;
+    margin: 10px 0;
+    padding: 0px 40px;
+}
+.container-pro{
+    width: 97%;
+}
+.tea{
+    height: 100px;
+}
+.name{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.order{
+    width: 90px;
+    margin: 5px;
+    top: 0px;
+    left: -10px;
+}
+.price{
+    margin: 5px;
+}
+.details{
+    display: none;
+}
+
+#about-us{
+    display: block;
+}
+#about-img{
+    float: center;
+    width: 200px;
+  
 }
 #info{
-    display:flex;
-    width: 195%;
+    width: 97%;
+    margin: 10px;  
+    display: inline-block; 
 }
 #info-img{
-    height: 400px;
+    height: 200px;
     float: right;
+    position: relative;
 }
 #info-line{
-    float: left;
-    margin: 100px auto;
-    margin-left: 10px;
-    font-size: 30px;
-    font-family: 'Mukti', sans-serif;
- }
-#about-us{
-    width: 195%;
+    width: 50%;
+   margin-top: 0px ;
+   margin-left: 10px;
+   font-size: 20px;
+   font-family: 'Mukti', sans-serif;
 }
- #about-img{
-    height: 400px;
- }
- #contact{
-    width: 195%;
-    margin-top: 20px;
- }
- .contact-details {
+#about-us{
+    width: 97%;
+}
+#about-h1{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
     font-family: 'Mukti', sans-serif;
-    margin: 5px;
+}
+#about-line{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin: 10px;   
+}
+#popup{
+    position: fixed;
+    padding: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    height: auto;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#popup-h1{
+    font-size: 25px;
+    color: red;
+    font-family: 'Mukti', sans-serif;
+    font-weight: 1000;
+    margin: 8px;
+}
+.popup-p{
+    font-size: 15px;
+    font-family: 'Mukti', sans-serif;
+    margin: 4px;
 }
