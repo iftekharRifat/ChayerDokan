@@ -32,6 +32,7 @@ nav ul li a:hover{
     display: block;
 }
 #nav-menu{
+    display: none;
     position: absolute;
     left: 450px;  
     top: 0px;
