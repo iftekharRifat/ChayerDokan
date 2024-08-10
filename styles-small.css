@@ -1,0 +1,68 @@
+body{
+    overflow-x: hidden;
+    width: 395px;
+}
+header{
+    width: 200%;
+}
+#main-info{
+    margin-left: 2rem;
+}
+.main-slogan{
+    width: 60%;
+    margin-left: 0;
+
+}
+.short-details{
+    width: 60%;
+    
+}
+.main-part{
+    font-size: 40px;
+}
+hr{
+    width: 195%;
+}
+#title{
+    position: relative;
+    left: 235px;
+    font-size: 45px;
+    padding: 20px;
+}
+#product{
+    grid-template-columns: auto auto;
+    margin: 0 5%
+}
+.box{
+    width: 350px;
+    margin: 10px;
+}
+#info{
+    display:flex;
+    width: 195%;
+}
+#info-img{
+    height: 400px;
+    float: right;
+}
+#info-line{
+    float: left;
+    margin: 100px auto;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Mukti', sans-serif;
+ }
+#about-us{
+    width: 195%;
+}
+ #about-img{
+    height: 400px;
+ }
+ #contact{
+    width: 195%;
+    margin-top: 20px;
+ }
+ .contact-details {
+    font-family: 'Mukti', sans-serif;
+    margin: 5px;
+}
