@@ -67,6 +67,9 @@ nav ul #close{
 }
 
 /* NAV ENDS */
+header{
+    background-image: url("https://w0.peakpx.com/wallpaper/97/853/HD-wallpaper-chai-candle-chailover-coffee-holding-light-lights-men-tea-wishes.jpg");
+}
 #main-info{
     margin-left: 2rem;
 }
@@ -75,6 +78,7 @@ nav ul #close{
 }
 .main-part{
     font-size: 40px;
+    color: rgb(255, 255, 255);
 
 }
 .highlight{
@@ -83,7 +87,7 @@ nav ul #close{
 
 .short-details{
     font-size: 12px;
-    width: 80%;
+    width: 70%;
 }
 #product{
     grid-template-columns: 200px 200px;
