@@ -191,12 +191,14 @@ document.getElementById("more").addEventListener("click", run);
     image.src = "menu-on.png"
     const menu = document.getElementById("nav-menu");
     menu.style.left = "250px"
+    menu.style.display = "block"
    }
    function imageOff(){
     const image = document.getElementById("menu");
     image.src = "menu.png"
     const menu = document.getElementById("nav-menu");
     menu.style.left = "450px"
+    menu.style.display = "none"
    }
 
    document.getElementById("button").addEventListener("click", close);
